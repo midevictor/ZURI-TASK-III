@@ -31,7 +31,7 @@ alert('Welcome to our Website');
 function validateUsername(username) {
 
     if (username === null) {
-        return 'Username is required';
+        return false;
     }
     if (username.length > 20) {
         return false;
@@ -42,7 +42,7 @@ function validateUsername(username) {
 }
 
 function validateHeigth(height) {
-    if (height === null) {
+    if (height === null || height === '') {
         return false;
     } else {
         return true;
